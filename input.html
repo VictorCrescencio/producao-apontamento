@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apontamento de Produção</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apontamento de Produção</h1>
+        <form id="productionForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="product">Produto:</label>
+            <select id="product" name="product" required>
+                <option value="">Selecione um produto</option>
+                <option value="13X14 CX C/ 20.000 (10X2000)">13X14 CX C/ 20.000 (10X2000)</option>
+                <option value="13X14 FARDO C/ 20.000 (10X2000)">13X14 FARDO C/ 20.000 (10X2000)</option>
+                <option value="13X14 CX C/ 30.000 (10X3000)">13X14 CX C/ 30.000 (10X3000)</option>
+                <option value="13X14 FARDO C/ 30.000 (10X3000)">13X14 FARDO C/ 30.000 (10X3000)</option>
+                <option value="18X20 CX C/ 5.000 ECONOMICO">18X20 CX C/ 5.000 ECONOMICO</option>
+                <option value="18X20 FARDO C/ 5.000 ECONOMICO">18X20 FARDO C/ 5.000 ECONOMICO</option>
+                <option value="19,5X20 CX C/ 5.000 ESPECIAL">19,5X20 CX C/ 5.000 ESPECIAL</option>
+                <option value="19,5X20 FARDO C/ 5.000 ESPECIAL">19,5X20 FARDO C/ 5.000 ESPECIAL</option>
+                <option value="19,5X20 FARDO C/ 2.500">19,5X20 FARDO C/ 2.500</option>
+                <option value="29,5X30 CX C/ 3.000 ESPECIAL">29,5X30 CX C/ 3.000 ESPECIAL</option>
+                <option value="29,5X30 FARDO C/ 3.000 ESPECIAL">29,5X30 FARDO C/ 3.000 ESPECIAL</option>
+                <option value="16X21 C/ 3.000 SEDA">16X21 C/ 3.000 SEDA</option>
+                <option value="16X21 C/ 3.000 CREPADO">16X21 C/ 3.000 CREPADO</option>
+                <option value="MONO LISA PCTE 500">MONO LISA PCTE 500</option>
+                <option value="MONO LISA PCTE 250">MONO LISA PCTE 250</option>
+                <option value="MONO IMPRESSA PCTE 500">MONO IMPRESSA PCTE 500</option>
+                <option value="MONO IMPRESSA PCTE 250">MONO IMPRESSA PCTE 250</option>
+                <option value="19,5X20 CX C/ 2.500 GRIFFI (25x100)">19,5X20 CX C/ 2.500 GRIFFI (25x100)</option>
+                <option value="19,5X20 CX C/ 2.500 GRIFFI (50x50)">19,5X20 CX C/ 2.500 GRIFFI (50x50)</option>
+                <option value="29,5X30 CX C/ 3.000 GRIFFI">29,5X30 CX C/ 3.000 GRIFFI</option>
+                <option value="29,5X30 CX C/ 2.400 GRIFFI">29,5X30 CX C/ 2.400 GRIFFI</option>
+                <option value="TOALHA INTERFOLHA BRANCO 800">TOALHA INTERFOLHA BRANCO 800</option>
+                <option value="TOALHA INTERFOLHA EXTRA LUXO 800">TOALHA INTERFOLHA EXTRA LUXO 800</option>
+                <option value="TOALHA INTERFOLHA BRANCO 1000">TOALHA INTERFOLHA BRANCO 1000</option>
+                <option value="TOALHA INTERFOLHA EXTRA LUXO 1000">TOALHA INTERFOLHA EXTRA LUXO 1000</option>
+                <option value="TOALHA INTERFOLHA BRANCA 1000 BATIZA">TOALHA INTERFOLHA BRANCA 1000 BATIZA</option>
+                <option value="TOALHA INTERFOLHA EXTRA LUXO 1000 BATIZA">TOALHA INTERFOLHA EXTRA LUXO 1000 BATIZA</option>
+            </select>
+
+            <label for="action">Ação:</label>
+            <select id="action" name="action" required>
+                <option value="">Selecione uma ação</option>
+                <option value="inicio">Início</option>
+                <option value="pausa">Pausa</option>
+                <option value="finalizacao">Finalização</option>
+            </select>
+
+            <button type="button" onclick="addEntry()">Adicionar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
